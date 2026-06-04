@@ -2,28 +2,12 @@
    PORTFOLIO DATA
    ============================================================ */
 const portfolioData = [
-    // CINEMATIC (3 videos)
-    { id: 5, title: "Urban Legends Documentary", category: "cinematic", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/ayrphdj8li", gradient: "linear-gradient(135deg, #281a0a, #3a2a1a, #27200d)" },
-    { id: 6, title: "Wedding Cinematic Film", category: "cinematic", icon: "fa-heart", video_url: "https://fast.wistia.net/embed/iframe/uddb1vx2vc", gradient: "linear-gradient(135deg, #0a0a28, #1a1a3a, #0d0d27)" },
-    { id: 7, title: "Midnight Drive — Short Film", category: "cinematic", icon: "fa-car", video_url: "", gradient: "linear-gradient(135deg, #280a1a, #3a1a2a, #270d1d)" },
-    
-    // COMMERCIAL ADS (4 videos)
-    { id: 8, title: "TechFlow Product Launch", category: "commercial", icon: "fa-bullhorn", video_url: "https://fast.wistia.net/embed/iframe/6gtwr9zj5n", gradient: "linear-gradient(135deg, #1a280a, #2a3a1a, #1d270d)" },
-    { id: 9, title: "Fashion Brand Campaign", category: "commercial", icon: "fa-gem", video_url: "https://fast.wistia.net/embed/iframe/yemctuf1rt", gradient: "linear-gradient(135deg, #0a1a28, #1a2a3a, #0d1d27)" },
-    { id: 10, title: "Premium Watch Product Shoot", category: "commercial", icon: "fa-camera", video_url: "", gradient: "linear-gradient(135deg, #1d1d1d, #333333, #111111)" },
-    { id: 11, title: "App Promo Ad", category: "commercial", icon: "fa-mobile-alt", video_url: "", gradient: "linear-gradient(135deg, #0f3d3e, #123437, #0b1f22)" },
-    
-    // REELS & TIKTOK (4 videos)
-    { id: 12, title: "Fitness Transformation", category: "reels", icon: "fa-bolt", video_url: "", gradient: "linear-gradient(135deg, #1a0a28, #2a1a3a, #1d0d27)" },
-    { id: 13, title: "Recipe Shorts Collection", category: "reels", icon: "fa-utensils", video_url: "", gradient: "linear-gradient(135deg, #280a0a, #3a1a1a, #271010)" },
-    { id: 14, title: "Travel Transition Trend", category: "reels", icon: "fa-plane", video_url: "", gradient: "linear-gradient(135deg, #0a2818, #1a3a2a, #0d2718)" },
-    { id: 15, title: "Educational Quick Tip", category: "reels", icon: "fa-lightbulb", video_url: "", gradient: "linear-gradient(135deg, #281a0a, #3a2a1a, #27200d)" },
-    
-    // GAMING (4 videos)
-    { id: 1, title: "Epic Boss Fight Highlight", category: "gaming", icon: "fa-gamepad", video_url: "", gradient: "linear-gradient(135deg, #0a1628, #1a2a4a, #0d2137)" },
-    { id: 2, title: "Funny Moments Montage", category: "gaming", icon: "fa-gamepad", video_url: "", gradient: "linear-gradient(135deg, #1a0a28, #2a1a3a, #1d0d27)" },
-    { id: 3, title: "Pro Tournament Finals", category: "gaming", icon: "fa-gamepad", video_url: "", gradient: "linear-gradient(135deg, #280a0a, #3a1a1a, #271010)" },
-    { id: 4, title: "Speedrun World Record", category: "gaming", icon: "fa-gamepad", video_url: "", gradient: "linear-gradient(135deg, #0a2818, #1a3a2a, #0d2718)" },
+    { id: 1, title: "Featured Edit 1", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/m6oja0eizi", gradient: "linear-gradient(135deg, #281a0a, #3a2a1a, #27200d)" },
+    { id: 2, title: "Featured Edit 2", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/x6xuvqm8pa", gradient: "linear-gradient(135deg, #0a0a28, #1a1a3a, #0d0d27)" },
+    { id: 3, title: "Featured Edit 3", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/ayrphdj8li", gradient: "linear-gradient(135deg, #280a1a, #3a1a2a, #270d1d)" },
+    { id: 4, title: "Featured Edit 4", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/uddb1vx2vc", gradient: "linear-gradient(135deg, #1a280a, #2a3a1a, #1d270d)" },
+    { id: 5, title: "Featured Edit 5", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/6gtwr9zj5n", gradient: "linear-gradient(135deg, #0a1a28, #1a2a3a, #0d1d27)" },
+    { id: 6, title: "Featured Edit 6", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/yemctuf1rt", gradient: "linear-gradient(135deg, #1d1d1d, #333333, #111111)" }
 ];
 
 /* ============================================================
