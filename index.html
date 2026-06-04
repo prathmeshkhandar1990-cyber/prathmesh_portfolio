@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional video editor portfolio showcasing cinematic edits, YouTube content, commercial ads, and motion graphics. Hire a skilled video editor for your next project.">
+    <title>Prathmesh Khandar | Professional Video Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon"><i class="fas fa-film"></i></span>
+                <span class="logo-text">PRATHMESH<span class="accent">K.</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#comparison" class="nav-link">Before/After</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ======================== HERO SECTION ======================== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span> Available for Projects
+            </div>
+            <h1 class="hero-name animate-on-scroll">
+                Prathmesh <span class="accent-glow">Khandar</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">Professional Video Editor</p>
+            <p class="hero-tagline animate-on-scroll">
+                Crafting cinematic stories, one frame at a time. I turn raw footage into visual masterpieces that captivate audiences and elevate brands.
+            </p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="#portfolio" class="btn btn-primary" id="btn-showreel">
+                    <i class="fas fa-play"></i> Watch Showreel
+                </a>
+                <a href="#contact" class="btn btn-outline" id="btn-hire">
+                    <i class="fas fa-envelope"></i> Hire Me
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-item">
+                    <div class="stat-value">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-value">
+                        <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-value">
+                        <span class="stat-number" data-count="82">0</span><span class="stat-suffix">k+</span>
+                    </div>
+                    <span class="stat-label">YouTube Subs</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ======================== ABOUT SECTION ======================== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="accent-glow">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper animate-on-scroll">
+                    <div class="about-image-frame">
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="about-image-glow"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <h3 class="about-heading">Turning Vision Into<br><span class="accent-glow">Cinematic Reality</span></h3>
+                    <p class="about-text">
+                        Hi, I’m Prathmesh Khandar — a Video Editor, Brand Manager, YouTube Creator, Website Designer, and AI-Powered Content Specialist.
+                    </p>
+                    <p class="about-text">
+                        With over 2 years of professional video editing experience, 3 years of hands-on YouTube content creation, and 1 year in brand management, I help brands and creators grow through cinematic storytelling and strategic digital execution.
+                    </p>
+                    <p class="about-text">
+                        I combine high-retention video editing, brand-focused strategy, and modern technologies such as AI tools and vibe-coded web design to create content and digital experiences that are both visually compelling and performance-driven.
+                    </p>
+                    <p class="about-text">
+                        Having managed and grown my own gaming YouTube channel, I understand audience behavior, content optimization, and the importance of strong digital identity. My approach blends creativity, strategy, and technology to help businesses and creators stand out in today’s competitive digital landscape.
+                    </p>
+                    <div class="about-tools">
+                        <h4 class="tools-title">My Toolkit</h4>
+                        <div class="tools-grid">
+                            <div class="tool-item" data-tooltip="Adobe Premiere Pro" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                                <div class="tool-icon pr-icon">
+                                    <span class="tool-abbr">Pr</span>
+                                </div>
+                                <span class="tool-name">Premiere Pro</span>
+                            </div>
+                            <div class="tool-item" data-tooltip="Adobe After Effects" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                                <div class="tool-icon ae-icon">
+                                    <span class="tool-abbr">Ae</span>
+                                </div>
+                                <span class="tool-name">After Effects</span>
+                            </div>
+                            <div class="tool-item" data-tooltip="Adobe Photoshop" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                                <div class="tool-icon ps-icon">
+                                    <span class="tool-abbr">Ps</span>
+                                </div>
+                                <span class="tool-name">Photoshop</span>
+                            </div>
+                            <div class="tool-item" data-tooltip="Canva" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                                <div class="tool-icon ca-icon">
+                                    <span class="tool-abbr">Ca</span>
+                                </div>
+                                <span class="tool-name">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== SERVICES SECTION ======================== -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">My <span class="accent-glow">Services</span></h2>
+                <p class="section-subtitle">Premium editing solutions tailored to your creative vision</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" data-delay="0" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="service-icon-wrap">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <h3 class="service-title">YouTube, Reels & TikTok</h3>
+                    <p class="service-desc">Combining dynamic motion graphics, engaging intros, and fast-paced edits designed for high-retention on vertical and horizontal platforms.</p>
+                    <div class="service-glow"></div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="100" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="service-title">Cinematic Edits</h3>
+                    <p class="service-desc">Film-grade color grading, dramatic pacing, and immersive sound design for a cinematic and storytelling experience.</p>
+                    <div class="service-glow"></div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="200" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="service-title">Commercial & Product Ads</h3>
+                    <p class="service-desc">High-impact ad edits and product shoots that drive conversions. Polished, branded, and optimized for maximum ROI.</p>
+                    <div class="service-glow"></div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="300" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3 class="service-title">Podcast Editing</h3>
+                    <p class="service-desc">Clean audio, smooth transitions, visual overlays, and multi-cam sync for professional and engaging podcasts.</p>
+                    <div class="service-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== PORTFOLIO SECTION ======================== -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="accent-glow">Portfolio</span></h2>
+                <p class="section-subtitle">A selection of my best video editing projects</p>
+            </div>
+            <div class="portfolio-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="reels">Reels</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items generated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== WEB DESIGN SECTION ======================== -->
+    <section id="web-design" class="section web-design-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Digital Experiences</span>
+                <h2 class="section-title">Web <span class="accent-glow">Design</span></h2>
+                <p class="section-subtitle">High-performance, vibe-coded websites designed to convert</p>
+            </div>
+            <div class="web-design-grid animate-on-scroll">
+                <a href="https://letsconceive.in/" target="_blank" class="web-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <div class="web-card-image">
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://letsconceive.in/" alt="Let's Conceive" loading="lazy">
+                        <div class="web-card-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit Website</span>
+                        </div>
+                    </div>
+                    <div class="web-card-info">
+                        <h3>Let's Conceive</h3>
+                        <p>Healthcare & Wellness Platform</p>
+                    </div>
+                </a>
+                <a href="https://interiorbysimran.com/simran" target="_blank" class="web-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <div class="web-card-image">
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://interiorbysimran.com/simran" alt="Interior By Simran" loading="lazy">
+                        <div class="web-card-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit Website</span>
+                        </div>
+                    </div>
+                    <div class="web-card-info">
+                        <h3>Interior By Simran</h3>
+                        <p>Interior Design Portfolio</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== VIRAL CAROUSEL SECTION ======================== -->
+    <section id="viral-carousel" class="section carousel-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Viral Content</span>
+                <h2 class="section-title">Instagram <span class="accent-glow">Carousels</span></h2>
+                <p class="section-subtitle">Swipe through my high-performing carousel designs</p>
+            </div>
+            
+            <div class="carousel-grid animate-on-scroll">
+                <!-- Carousel 1 -->
+                <div class="carousel-wrapper">
+                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
+                    <div class="carousel-container">
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1" loading="lazy"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2" loading="lazy"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3" loading="lazy"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4" loading="lazy"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5" loading="lazy"></div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <!-- Carousel 2 -->
+                <div class="carousel-wrapper">
+                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
+                    <div class="carousel-container">
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <!-- Carousel 3 -->
+                <div class="carousel-wrapper">
+                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
+                    <div class="carousel-container">
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <!-- Carousel 4 -->
+                <div class="carousel-wrapper">
+                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
+                    <div class="carousel-container">
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <!-- Carousel 5 -->
+                <div class="carousel-wrapper">
+                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
+                    <div class="carousel-container">
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <!-- Carousel 6 -->
+                <div class="carousel-wrapper">
+                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
+                    <div class="carousel-container">
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== BEFORE/AFTER SECTION ======================== -->
+    <section id="comparison" class="section comparison-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">The Difference</span>
+                <h2 class="section-title">Before & <span class="accent-glow">After</span></h2>
+                <p class="section-subtitle">See the transformation — drag the slider to compare</p>
+            </div>
+            <div class="comparison-wrapper animate-on-scroll">
+                <div class="comparison-container" id="comparisonSlider">
+                    <div class="comparison-before">
+                        <div class="comparison-label">BEFORE</div>
+                        <div class="comparison-visual before-visual">
+                            <div class="comp-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Raw Footage</span>
+                                <div class="comp-bars">
+                                    <div class="comp-bar" style="width:80%;background:#555"></div>
+                                    <div class="comp-bar" style="width:60%;background:#444"></div>
+                                    <div class="comp-bar" style="width:90%;background:#4a4a4a"></div>
+                                    <div class="comp-bar" style="width:40%;background:#3a3a3a"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-after">
+                        <div class="comparison-label">AFTER</div>
+                        <div class="comparison-visual after-visual">
+                            <div class="comp-placeholder colored">
+                                <i class="fas fa-magic"></i>
+                                <span>Color Graded</span>
+                                <div class="comp-bars">
+                                    <div class="comp-bar" style="width:80%;background:linear-gradient(90deg,#00E0FF,#00F5D4)"></div>
+                                    <div class="comp-bar" style="width:60%;background:linear-gradient(90deg,#00c4e0,#00d4b8)"></div>
+                                    <div class="comp-bar" style="width:90%;background:linear-gradient(90deg,#00a8c0,#00b49c)"></div>
+                                    <div class="comp-bar" style="width:40%;background:linear-gradient(90deg,#008ca0,#009480)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-slider-handle" id="sliderHandle">
+                        <div class="slider-line"></div>
+                        <div class="slider-circle">
+                            <i class="fas fa-arrows-left-right"></i>
+                        </div>
+                        <div class="slider-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== TESTIMONIALS SECTION ======================== -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Client Love</span>
+                <h2 class="section-title">What Clients <span class="accent-glow">Say</span></h2>
+                <p class="section-subtitle">Trusted by creators and brands worldwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll" data-delay="0">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Prathmesh is incredibly talented. He took my raw footage and turned it into a high-retention masterpiece. My YouTube channel growth in India has skyrocketed thanks to his cinematic editing and understanding of the algorithm."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>AK</span>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Arjun Kumar</h4>
+                            <span class="author-role">Content Creator · India</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-glow"></div>
+                </div>
+                <div class="testimonial-card animate-on-scroll" data-delay="150">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Prathmesh across timezones was seamless. He delivered an exceptional commercial ad and designed stunning Instagram carousels that doubled our engagement rate in the US market. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>SJ</span>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Jenkins</h4>
+                            <span class="author-role">Marketing Director · USA</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-glow"></div>
+                </div>
+                <div class="testimonial-card animate-on-scroll" data-delay="300">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"His Reels and TikTok edits are insane! He understands exactly how to hook viewers in the first 3 seconds. The viral carousels he designed for my agency in London brought in massive leads."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>DT</span>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">David Thorne</h4>
+                            <span class="author-role">Agency Owner · UK</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== CONTACT SECTION ======================== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="accent-glow">Work Together</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's create something amazing</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@prathmeshk.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Los Angeles, CA</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="social-icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="https://wa.me/15552345678" class="btn btn-whatsapp" id="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                        <label for="form-name" class="form-label">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                        <label for="form-email" class="form-label">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="form-service" class="form-input form-select" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="youtube">YouTube Editing</option>
+                            <option value="reels">Reels & TikTok</option>
+                            <option value="cinematic">Cinematic Edit</option>
+                            <option value="commercial">Commercial Ad</option>
+                            <option value="podcast">Podcast Editing</option>
+                            <option value="motion">Motion Graphics</option>
+                        </select>
+                        <label for="form-service" class="form-label form-label-select">Service Needed</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" class="form-input form-textarea" placeholder=" " rows="5" required></textarea>
+                        <label for="form-message" class="form-label">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading"><i class="fas fa-circle-notch fa-spin"></i></span>
+                        <span class="btn-success"><i class="fas fa-check"></i> Sent!</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-icon"><i class="fas fa-film"></i></span>
+                        <span class="logo-text">PRATHMESH<span class="accent">K.</span></span>
+                    </a>
+                    <p class="footer-tagline">Crafting cinematic stories,<br>one frame at a time.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">YouTube Editing</a></li>
+                        <li><a href="#services">Reels & TikTok</a></li>
+                        <li><a href="#services">Commercial Ads</a></li>
+                        <li><a href="#services">Motion Graphics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Follow Me</h4>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prathmesh Khandar. All rights reserved. Designed with <i class="fas fa-heart" style="color:#00E5FF"></i> and creativity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================== VIDEO MODAL ======================== -->
+    <div class="modal-overlay" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="fas fa-xmark"></i>
+            </button>
+            <div class="modal-video-wrapper" id="modalVideoWrapper">
+                <div class="modal-video-placeholder" id="modalVideoArea">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Video Player Placeholder</p>
+                    <span class="modal-project-name" id="modalProjectName"></span>
+                    <p style="font-size: 0.8rem; margin-top: 10px; color: var(--accent);">(Replace with actual video link in code)</p>
+                </div>
+                <iframe id="modalIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="display: none; width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
