@@ -29,7 +29,7 @@
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#comparison" class="nav-link">Before/After</a></li>
                 <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-cta-item"><a href="#contact" class="btn btn-primary btn-sm nav-cta">Get in touch <i class="fas fa-arrow-right"></i></a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
@@ -39,54 +39,46 @@
 
     <!-- ======================== HERO SECTION ======================== -->
     <section id="hero" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge animate-on-scroll">
-                <span class="badge-dot"></span> Available for Projects
-            </div>
-            <h1 class="hero-name animate-on-scroll">
-                Prathmesh <span class="accent-glow">Khandar</span>
-            </h1>
-            <p class="hero-subtitle animate-on-scroll">Professional Video Editor</p>
-            <p class="hero-tagline animate-on-scroll">
-                Crafting cinematic stories, one frame at a time. I turn raw footage into visual masterpieces that captivate audiences and elevate brands.
-            </p>
-            <div class="hero-buttons animate-on-scroll">
-                <a href="#portfolio" class="btn btn-primary" id="btn-showreel">
-                    <i class="fas fa-play"></i> Watch Showreel
-                </a>
-                <a href="#contact" class="btn btn-outline" id="btn-hire">
-                    <i class="fas fa-envelope"></i> Hire Me
-                </a>
-            </div>
-            <div class="hero-stats animate-on-scroll">
-                <div class="stat-item">
-                    <div class="stat-value">
-                        <span class="stat-number" data-count="3">0</span><span class="stat-suffix">+</span>
-                    </div>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <div class="stat-value">
-                        <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
-                    </div>
-                    <span class="stat-label">Projects Delivered</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <div class="stat-value">
-                        <span class="stat-number" data-count="82">0</span><span class="stat-suffix">k+</span>
-                    </div>
-                    <span class="stat-label">YouTube Subs</span>
-                </div>
-            </div>
+        <!-- Background Video/Image -->
+        <div class="hero-background">
+            <div class="hero-gradient-overlay"></div>
+            <!-- Image background -->
+            <img src="assets/hero-bg.webp" alt="Prathmesh Khandar" class="hero-bg-media">
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
+
+        <div class="hero-content-new container">
+            <div class="hero-main-row">
+                <div class="hero-left animate-on-scroll">
+                    <p class="hero-greeting">Hey, I'm a</p>
+                    <h1 class="hero-title-massive">
+                        Creative<br>Editor
+                    </h1>
+                </div>
+                
+                <div class="hero-right animate-on-scroll" data-delay="200">
+                    <h3 class="hero-pitch-title">Great editing should feel invisible.</h3>
+                    <p class="hero-pitch-text">From raw cuts to color grading, I build cinematic stories that connect and convert.</p>
+                </div>
             </div>
-            <span>Scroll Down</span>
+
+            <div class="hero-bottom-row animate-on-scroll" data-delay="400">
+                <div class="hero-stat-block">
+                    <span class="stat-num">01</span>
+                    <span class="stat-text">Cinematic Edits</span>
+                </div>
+                <div class="hero-stat-block">
+                    <span class="stat-num">02</span>
+                    <span class="stat-text">Commercial Ads</span>
+                </div>
+                <div class="hero-stat-block">
+                    <span class="stat-num">03</span>
+                    <span class="stat-text">YouTube & Reels</span>
+                </div>
+                <div class="hero-stat-block">
+                    <span class="stat-num">04</span>
+                    <span class="stat-text">Color Grading</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -100,9 +92,7 @@
             <div class="about-grid">
                 <div class="about-image-wrapper animate-on-scroll">
                     <div class="about-image-frame">
-                        <div class="about-image-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="assets/about-me.png" alt="Prathmesh Khandar" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="about-image-glow"></div>
                     </div>
                     <div class="experience-badge">
@@ -218,175 +208,23 @@
         </div>
     </section>
 
-    <!-- ======================== WEB DESIGN SECTION ======================== -->
-    <section id="web-design" class="section web-design-section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">Digital Experiences</span>
-                <h2 class="section-title">Web <span class="accent-glow">Design</span></h2>
-                <p class="section-subtitle">High-performance, vibe-coded websites designed to convert</p>
-            </div>
-            <div class="web-design-grid animate-on-scroll">
-                <a href="https://letsconceive.in/" target="_blank" class="web-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
-                    <div class="web-card-image">
-                        <img src="https://image.thum.io/get/width/1200/crop/800/https://letsconceive.in/" alt="Let's Conceive" loading="lazy">
-                        <div class="web-card-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Visit Website</span>
-                        </div>
-                    </div>
-                    <div class="web-card-info">
-                        <h3>Let's Conceive</h3>
-                        <p>Healthcare & Wellness Platform</p>
-                    </div>
-                </a>
-                <a href="https://interiorbysimran.com/simran" target="_blank" class="web-card" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
-                    <div class="web-card-image">
-                        <img src="https://image.thum.io/get/width/1200/crop/800/https://interiorbysimran.com/simran" alt="Interior By Simran" loading="lazy">
-                        <div class="web-card-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Visit Website</span>
-                        </div>
-                    </div>
-                    <div class="web-card-info">
-                        <h3>Interior By Simran</h3>
-                        <p>Interior Design Portfolio</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======================== VIRAL CAROUSEL SECTION ======================== -->
-    <section id="viral-carousel" class="section carousel-section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">Viral Content</span>
-                <h2 class="section-title">Instagram <span class="accent-glow">Carousels</span></h2>
-                <p class="section-subtitle">Swipe through my high-performing carousel designs</p>
-            </div>
-            
-            <div class="carousel-grid animate-on-scroll">
-                <!-- Carousel 1 -->
-                <div class="carousel-wrapper">
-                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
-                    <div class="carousel-container">
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1" loading="lazy"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2" loading="lazy"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3" loading="lazy"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4" loading="lazy"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5" loading="lazy"></div>
-                    </div>
-                    <div class="carousel-dots"></div>
-                </div>
-
-                <!-- Carousel 2 -->
-                <div class="carousel-wrapper">
-                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
-                    <div class="carousel-container">
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
-                    </div>
-                    <div class="carousel-dots"></div>
-                </div>
-
-                <!-- Carousel 3 -->
-                <div class="carousel-wrapper">
-                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
-                    <div class="carousel-container">
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
-                    </div>
-                    <div class="carousel-dots"></div>
-                </div>
-
-                <!-- Carousel 4 -->
-                <div class="carousel-wrapper">
-                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
-                    <div class="carousel-container">
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
-                    </div>
-                    <div class="carousel-dots"></div>
-                </div>
-
-                <!-- Carousel 5 -->
-                <div class="carousel-wrapper">
-                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
-                    <div class="carousel-container">
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
-                    </div>
-                    <div class="carousel-dots"></div>
-                </div>
-
-                <!-- Carousel 6 -->
-                <div class="carousel-wrapper">
-                    <div class="swipe-hint"><i class="fas fa-hand-pointer"></i> Swipe</div>
-                    <div class="carousel-container">
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 1"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 2"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 3"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 4"></div>
-                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Slide 5"></div>
-                    </div>
-                    <div class="carousel-dots"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ======================== BEFORE/AFTER SECTION ======================== -->
     <section id="comparison" class="section comparison-section">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-tag">The Difference</span>
+                <span class="section-tag">Color Grading</span>
                 <h2 class="section-title">Before & <span class="accent-glow">After</span></h2>
-                <p class="section-subtitle">See the transformation — drag the slider to compare</p>
+                <p class="section-subtitle">Drag the slider to compare the raw footage with the final cinematic color grade.</p>
             </div>
             <div class="comparison-wrapper animate-on-scroll">
                 <div class="comparison-container" id="comparisonSlider">
                     <div class="comparison-before">
                         <div class="comparison-label">BEFORE</div>
-                        <div class="comparison-visual before-visual">
-                            <div class="comp-placeholder">
-                                <i class="fas fa-image"></i>
-                                <span>Raw Footage</span>
-                                <div class="comp-bars">
-                                    <div class="comp-bar" style="width:80%;background:#555"></div>
-                                    <div class="comp-bar" style="width:60%;background:#444"></div>
-                                    <div class="comp-bar" style="width:90%;background:#4a4a4a"></div>
-                                    <div class="comp-bar" style="width:40%;background:#3a3a3a"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="assets/colour grade/before.jpg" alt="Before color grade" class="comparison-visual" style="object-fit: cover;">
                     </div>
                     <div class="comparison-after">
                         <div class="comparison-label">AFTER</div>
-                        <div class="comparison-visual after-visual">
-                            <div class="comp-placeholder colored">
-                                <i class="fas fa-magic"></i>
-                                <span>Color Graded</span>
-                                <div class="comp-bars">
-                                    <div class="comp-bar" style="width:80%;background:linear-gradient(90deg,#00E0FF,#00F5D4)"></div>
-                                    <div class="comp-bar" style="width:60%;background:linear-gradient(90deg,#00c4e0,#00d4b8)"></div>
-                                    <div class="comp-bar" style="width:90%;background:linear-gradient(90deg,#00a8c0,#00b49c)"></div>
-                                    <div class="comp-bar" style="width:40%;background:linear-gradient(90deg,#008ca0,#009480)"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="assets/colour grade/after.jpg" alt="After color grade" class="comparison-visual" style="object-fit: cover;">
                     </div>
                     <div class="comparison-slider-handle" id="sliderHandle">
                         <div class="slider-line"></div>

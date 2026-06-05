@@ -54,6 +54,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -258,101 +259,144 @@ ul { list-style: none; }
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.nav-cta-item {
+    margin-left: 12px;
+}
+.nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ff5722; /* Folioblox inspired orange or use var(--accent) */
+    background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+    color: var(--bg-deep);
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px var(--accent-glow);
+}
+
 /* ============================================================
-   HERO SECTION
+   HERO SECTION (Folioblox Style)
    ============================================================ */
 .hero-section {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end; /* push content to bottom/middle */
     position: relative;
     z-index: 1;
     overflow: hidden;
+    padding-bottom: 60px;
+    padding-top: 100px; /* space for nav */
 }
 
-.hero-overlay {
+/* Background Media */
+.hero-background {
     position: absolute;
     inset: 0;
-    background:
-        radial-gradient(ellipse at 20% 50%, rgba(0, 224, 255, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(0, 245, 212, 0.04) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 80%, rgba(0, 224, 255, 0.03) 0%, transparent 60%),
-        linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-primary) 50%, var(--bg-deep) 100%);
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+.hero-bg-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hero-gradient-overlay {
+    position: absolute;
+    inset: 0;
     z-index: -1;
+    /* Deep gradient to match Folioblox vibe but with our colors */
+    background: linear-gradient(90deg, rgba(11,31,34,0.95) 0%, rgba(11,31,34,0.4) 50%, rgba(11,31,34,0.8) 100%),
+                linear-gradient(0deg, rgba(11,31,34,1) 0%, rgba(11,31,34,0) 30%);
 }
 
-.hero-content {
-    text-align: center;
-    padding: 0 24px;
-    max-width: 860px;
+.hero-content-new {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    gap: 60px;
 }
 
-.hero-badge {
-    display: inline-flex;
+.hero-main-row {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Left typography */
+.hero-left {
+    flex: 1;
+    min-width: 300px;
+}
+.hero-greeting {
     font-family: var(--font-display);
-    font-size: 0.85rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    color: var(--accent);
-    background: var(--accent-dim);
-    border: 1px solid var(--border-glass);
-    padding: 8px 20px;
-    border-radius: 50px;
-    margin-bottom: 28px;
+    color: var(--text-primary);
+    margin-bottom: -10px;
 }
-
-.badge-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--accent);
-    border-radius: 50%;
-    animation: pulse-dot 2s ease-in-out infinite;
-}
-
-@keyframes pulse-dot {
-    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 var(--accent-glow); }
-    50% { opacity: 0.7; box-shadow: 0 0 0 8px transparent; }
-}
-
-.hero-name {
+.hero-title-massive {
     font-family: var(--font-display);
-    font-size: clamp(2rem, 8vw, 6.5rem);
-    font-weight: 900;
-    line-height: 1.1;
-    margin-bottom: 24px;
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 800;
+    line-height: 1;
+    color: #ffffff;
     letter-spacing: -2px;
-    white-space: nowrap;
 }
 
-.hero-subtitle {
-    font-family: var(--font-display);
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-    font-weight: 500;
-    color: var(--accent);
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+/* Right paragraph */
+.hero-right {
+    flex: 0 1 400px;
+    padding-top: 40px;
 }
-
-.hero-tagline {
+.hero-pitch-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+.hero-pitch-text {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto 36px;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
-.hero-buttons {
+/* Bottom Stats Row */
+.hero-bottom-row {
     display: flex;
-    gap: 16px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 30px;
     flex-wrap: wrap;
-    margin-bottom: 56px;
+    gap: 20px;
+}
+.hero-stat-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.stat-num {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+.stat-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
 }
 
 /* Buttons */
@@ -679,16 +723,12 @@ ul { list-style: none; }
 }
 
 .services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
 .service-card {
-    flex: 1 1 calc(25% - 32px);
-    min-width: 220px;
-    max-width: 380px;
     position: relative;
     background: var(--bg-card);
     backdrop-filter: blur(20px);
@@ -807,16 +847,12 @@ ul { list-style: none; }
 }
 
 .portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
 }
 
 .portfolio-item {
-    flex: 1 1 calc(25% - 24px);
-    min-width: 250px;
-    max-width: 400px;
     position: relative;
     border-radius: var(--card-radius);
     overflow: hidden;
@@ -927,16 +963,13 @@ ul { list-style: none; }
 }
 
 .web-design-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
 }
 
 .web-card {
-    flex: 1 1 calc(50% - 32px);
-    min-width: 300px;
-    max-width: 500px;
+    position: relative;
     background: var(--bg-card);
     border: 1px solid var(--border-glass);
     border-radius: var(--card-radius);
@@ -1020,17 +1053,13 @@ ul { list-style: none; }
 }
 
 .carousel-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
 }
 
 .carousel-wrapper {
     position: relative;
-    flex: 1 1 calc(33.333% - 32px);
-    min-width: 280px;
-    max-width: 400px;
     margin: 0;
     border-radius: var(--card-radius);
     background: var(--bg-card);
