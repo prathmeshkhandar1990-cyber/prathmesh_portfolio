@@ -2,12 +2,14 @@
    PORTFOLIO DATA
    ============================================================ */
 const portfolioData = [
-    { id: 1, title: "Talking Head Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/m6oja0eizi", gradient: "linear-gradient(135deg, #281a0a, #3a2a1a, #27200d)" },
-    { id: 2, title: "Real Estate Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/x6xuvqm8pa", gradient: "linear-gradient(135deg, #0a0a28, #1a1a3a, #0d0d27)" },
-    { id: 3, title: "Health Niche Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/ayrphdj8li", gradient: "linear-gradient(135deg, #280a1a, #3a1a2a, #270d1d)" },
-    { id: 4, title: "AI UGC Content Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/uddb1vx2vc", gradient: "linear-gradient(135deg, #1a280a, #2a3a1a, #1d270d)" },
-    { id: 5, title: "Product Marketing Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/6gtwr9zj5n", gradient: "linear-gradient(135deg, #0a1a28, #1a2a3a, #0d1d27)" },
-    { id: 6, title: "Product AI UGC Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/yemctuf1rt", gradient: "linear-gradient(135deg, #1d1d1d, #333333, #111111)" }
+    { id: 1, title: "Meta Ads Video Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/dzvjpu7do3", gradient: "linear-gradient(135deg, #1d1d1d, #333333, #111111)" },
+    { id: 2, title: "Meta Ads Video Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/efvj6rmt05", gradient: "linear-gradient(135deg, #281a0a, #3a2a1a, #27200d)" },
+    { id: 3, title: "Talking Head Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/m6oja0eizi", gradient: "linear-gradient(135deg, #0a0a28, #1a1a3a, #0d0d27)" },
+    { id: 4, title: "Real Estate Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/x6xuvqm8pa", gradient: "linear-gradient(135deg, #280a1a, #3a1a2a, #270d1d)" },
+    { id: 5, title: "Health Niche Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/ayrphdj8li", gradient: "linear-gradient(135deg, #1a280a, #2a3a1a, #1d270d)" },
+    { id: 6, title: "AI UGC Content Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/uddb1vx2vc", gradient: "linear-gradient(135deg, #0a1a28, #1a2a3a, #0d1d27)" },
+    { id: 7, title: "Product Marketing Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/6gtwr9zj5n", gradient: "linear-gradient(135deg, #1d1d1d, #333333, #111111)" },
+    { id: 8, title: "Product AI UGC Edit", category: "all", icon: "fa-film", video_url: "https://fast.wistia.net/embed/iframe/yemctuf1rt", gradient: "linear-gradient(135deg, #281a0a, #3a2a1a, #27200d)" }
 ];
 
 /* ============================================================
